@@ -1,4 +1,4 @@
-# utm-generator-with-javascript
+# Utm Generator with Javascript
 
 Mini projeto para estudo do JavaScript Puro.
 
