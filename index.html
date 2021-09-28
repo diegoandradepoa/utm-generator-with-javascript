@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>UTM Generator</title>
+</head>
+
+<body>
+    <div id="top">
+        <h1>Gerador de UTMs</h1>
+    </div>
+    <br>
+    <div id="form-main">
+        <form class="generator">
+            <label>Insira aqui o seu link e gere a UTM para suas ações de Marketing Digital:</label>
+            <div id="content">
+                <p><input class="site" type="text" name="site" placeholder="https://meusite.com.br" /></p>
+                <p><input class="source" type="text" name="source"
+                        placeholder="Fonte da campanha (Exemplo: google, newsletter)" /></p>
+                <p><input class="channel" type="text" name="channel"
+                        placeholder="Referência da campanha (Exemplo: cpc, banner, email)" /></p>
+                <p><input class="campaing-name" type="text" name="campaing-name"
+                        placeholder="Nome da campanha (Exemplo: vendas_black_friday)" /></p>
+                <p><input class="campaign-keyword" type="text" name="campaign-keyword"
+                        placeholder="Termos da campanha (Identificar palavras-chave pagas)" /></p>
+                <p><input class="campaign-content" type="text" name="campaign-content"
+                        placeholder="Conteúdo da campanha (Use para diferenciar anúncios)" /></p>
+            </div>
+            <br>
+            <div id="actionButtons">
+                <button id="btn-builUrl" type="button" onclick="buildUrl()">Gerar URL</button>
+                <button id="btn-copy" onclick="copyUrl()">Copiar URL</button>
+                <input id="reset" type="reset" value="Limpar campos">
+            </div>
+        </form>
+    </div>
+    <br>
+    <div id="result">
+        <textarea id="result-copy"></textarea>
+    </div>
+    <footer id="footer">
+        <p><a href="https://support.google.com/analytics/answer/1033863?hl=pt-BR#zippy=%2Cneste-artigo"
+                target="_blank">O que são UTM em URLs?</a></p>
+        <p><a href="https://github.com/diegoandradepoa" target="_blank">&copy; Feito por Diego Cruz </a></p>
+</body>
+
+</html>
